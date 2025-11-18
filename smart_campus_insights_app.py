@@ -52,7 +52,7 @@ else:
 # --- Main Page Content ---
 
 # Check if any students are selected before trying to filter
-if not selected_students:
+if len(selected_students) == 0:
     st.warning("Please select at least one student from the sidebar to view insights.")
     st.stop()
 
